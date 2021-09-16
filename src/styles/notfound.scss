@@ -1,0 +1,31 @@
+@import 'import/variables';
+
+.page-notfound {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &:after {
+        position: absolute;
+        top: -148px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: calc(120% + 148px);
+        background: url(../static/images/herro-pattern.png) center top no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 5rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        color: $muted-color;
+    }
+}

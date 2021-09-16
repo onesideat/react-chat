@@ -1,0 +1,44 @@
+@import './import/variables';
+
+.hero {
+    p {
+        font-size: 0.875rem;
+        line-height: 1.63;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text-color;
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+        line-height: 1.05;
+        margin: 0;
+        margin-bottom: 3.125rem;
+    }
+
+    img {
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .form {
+        position: relative;
+
+        .ui-field {
+            padding-right: 2.5rem;
+
+            input {
+                padding-top: 1.14rem;
+                padding-bottom: 1.14rem;
+                padding-right: 200px;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

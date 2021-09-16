@@ -1,0 +1,50 @@
+@import 'import/variables';
+
+.header {
+    position: relative;
+    padding: 0.5rem 1rem;
+    padding-bottom: 5rem;
+
+    .logo {
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        font-size: 1.5rem;
+        color: $text-color;
+        text-decoration: none;
+
+        span {
+            color: $accent-color;
+        }
+    }
+
+    .navbar {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                position: relative;
+
+                a {
+                    display: inline-block;
+                    font-weight: 700;
+                    line-height: 1.5rem;
+                    text-transform: lowercase;
+                    color: $text-color;
+                    padding: 1.125rem;
+                    text-decoration: none;
+                    transition: all 0.4s ease;
+
+                    &:hover,
+                    &.is-active {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+}

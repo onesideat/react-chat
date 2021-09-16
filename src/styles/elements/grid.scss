@@ -1,0 +1,44 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &.is-fluid {
+        max-width: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+
+    &.align-items-center {
+        align-items: center;
+    }
+}
+
+.col {
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &.is-auto {
+        flex: none;
+        width: auto;
+    }
+
+    &.col-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    &.col-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+}

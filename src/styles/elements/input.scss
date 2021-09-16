@@ -1,0 +1,40 @@
+@import '../import/variables';
+
+.ui-input {
+    display: block;
+    width: 100%;
+    border-radius: 50rem;
+    text-overflow: ellipsis;
+    border: 2px solid $input-border;
+    padding: 1.15rem 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.4s ease-out;
+    
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.ui-field {
+    width: 100%;
+
+    small {
+        font-size: 80%;
+        padding-left: 1.25rem;
+        color: $muted-color;
+    }
+
+    &.has-error {
+        small {
+            color: $danger-color;
+        }
+
+        .ui-input {
+            color: $danger-color;
+            background-color: #fef1f2;
+            border-color: $danger-color;
+        }
+    }
+}

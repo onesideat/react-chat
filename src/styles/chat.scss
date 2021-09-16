@@ -1,0 +1,91 @@
+@import './import/variables';
+@import './import/animations';
+
+.chat {
+    flex: 1;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: $chat-background;
+    box-shadow: 0px 20px 80px 0px rgba(209, 209, 209, 0.5);
+
+    h2 {
+        margin: 0 0 1rem;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.75rem;
+            animation: fadeInUp 0.25s ease-out;
+            
+            svg {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .row .col:last-child {
+                padding-left: 0;;
+            }
+
+            .message {
+                .bubble {
+                    background-color: $accent-color;
+                    color: #fff;
+                    border-radius: 1.25rem;
+                    padding: 0.75rem 1.5rem;
+
+                    h5 {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        margin: 0 0 0.25rem;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: rgba(#fff, 0.85)
+                    }
+                }
+
+                span {
+                    margin-left: 0.5rem;
+                    font-size: 80%;
+                    color: $muted-color;
+                }
+            }
+        }
+    }
+
+    .chat-form {
+        display: flex;
+        background-color: #eef2f8;
+        border-radius: 1.25rem;
+        padding: 1rem;
+
+        .ui-field {
+            flex: 1;
+
+            input {
+                border-radius: 1.25rem;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.15rem 1.5rem;
+            margin-left: 1.25rem;
+            border-radius: 1.25rem;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
